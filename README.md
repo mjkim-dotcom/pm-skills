@@ -1,10 +1,26 @@
 # Product Compass — PM Marketplace
 
-64 skills and 35 commands across 8 plugins for Product Managers. Built for Claude Code and Claude Cowork, with skills compatible across AI coding assistants.
+65 skills and 36 commands across 8 plugins for Product Managers. Built for Claude Code and Claude Cowork, with skills compatible across AI coding assistants.
 
 Based on [The Product Compass Newsletter](https://www.productcompass.pm) by Paweł Huryn.
 
 ![Plugin overview](plugins_command_skills.webp)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Skills and Commands](#skills-and-commands)
+- [Plugins](#plugins)
+  - [1. pm-product-discovery](#1-pm-product-discovery)
+  - [2. pm-product-strategy](#2-pm-product-strategy)
+  - [3. pm-execution](#3-pm-execution)
+  - [4. pm-market-research](#4-pm-market-research)
+  - [5. pm-data-analytics](#5-pm-data-analytics)
+  - [6. pm-go-to-market](#6-pm-go-to-market)
+  - [7. pm-marketing-growth](#7-pm-marketing-growth)
+  - [8. pm-toolkit](#8-pm-toolkit)
+- [How Commands Chain Together](#how-commands-chain-together)
+- [About](#about)
 
 ## Installation
 
@@ -85,13 +101,26 @@ Continuous product discovery: ideation, experiments, assumption testing, feature
 - `/interview` — Prepare an interview script or summarize a transcript (`prep|summarize`)
 - `/setup-metrics` — Design a product metrics dashboard
 
+**Examples:**
+
+Skills:
+- `What are the riskiest assumptions for our AI writing assistant idea?`
+- `Help me build an Opportunity Solution Tree for improving user activation`
+- `Prioritize these 12 feature requests from our enterprise customers [attach CSV]`
+
+Commands:
+- `/discover AI-powered meeting summarizer for remote teams`
+- `/brainstorm experiments existing — We need to reduce churn in our onboarding flow`
+- `/interview prep — We're interviewing enterprise buyers about their procurement workflow`
+
 ### 2. pm-product-strategy
 
 Product strategy, vision, business models, pricing, and macro environment analysis. Covers the full strategic toolkit from vision crafting through competitive landscape scanning.
 
-**Skills (11):**
+**Skills (12):**
 
 - `product-strategy` — Comprehensive 9-section Product Strategy Canvas (vision → defensibility)
+- `startup-canvas` — Startup Canvas combining Product Strategy (9 sections) + Business Model — an alternative to BMC and Lean Canvas for new products
 - `product-vision` — Craft an inspiring, achievable, and emotional product vision
 - `value-proposition` — 6-part JTBD value proposition (Who, Why, What before, How, What after, Alternatives)
 - `lean-canvas` — Lean Canvas business model for startups and new products
@@ -103,12 +132,25 @@ Product strategy, vision, business models, pricing, and macro environment analys
 - `porters-five-forces` — Competitive forces analysis (rivalry, suppliers, buyers, substitutes, new entrants)
 - `ansoff-matrix` — Growth strategy mapping across markets and products
 
-**Commands (4):**
+**Commands (5):**
 
 - `/strategy` — Create a complete 9-section Product Strategy Canvas
-- `/business-model` — Explore business models (`lean|full|value-prop|all`)
+- `/business-model` — Explore business models (`lean|full|startup|value-prop|all`)
+- `/value-proposition` — Design a value proposition using the 6-part JTBD template
 - `/market-scan` — Macro environment analysis combining SWOT + PESTLE + Porter's + Ansoff
 - `/pricing` — Design a pricing strategy with competitive analysis and experiments
+
+**Examples:**
+
+Skills:
+- `Compare Lean Canvas vs Business Model Canvas vs Startup Canvas for my marketplace startup`
+- `Design a value proposition for our AI writing assistant targeting non-native English speakers`
+- `Run a Porter's Five Forces analysis for the project management SaaS market`
+
+Commands:
+- `/strategy B2B project management tool for agencies`
+- `/business-model startup — AI writing tool for non-native English speakers`
+- `/value-proposition SaaS onboarding tool for enterprise customers`
 
 ### 3. pm-execution
 
@@ -145,6 +187,18 @@ Day-to-day product management: PRDs, OKRs, roadmaps, sprints, retrospectives, re
 - `/test-scenarios` — Generate test scenarios from user stories
 - `/generate-data` — Create realistic dummy datasets
 
+**Examples:**
+
+Skills:
+- `Which prioritization framework should I use for a 50-item backlog?`
+- `Map our stakeholders for the platform migration project`
+- `What's the difference between Opportunity Score, ICE, and RICE?`
+
+Commands:
+- `/write-prd Smart notification system that reduces alert fatigue`
+- `/sprint retro — Here are the notes from our last sprint`
+- `/write-stories job — Break down the "team dashboard" feature into job stories`
+
 ### 4. pm-market-research
 
 User research and competitive analysis: personas, segmentation, journey maps, market sizing, competitor analysis, and feedback analysis.
@@ -165,6 +219,18 @@ User research and competitive analysis: personas, segmentation, journey maps, ma
 - `/competitive-analysis` — Analyze the competitive landscape
 - `/analyze-feedback` — Sentiment analysis and segment insights from user feedback
 
+**Examples:**
+
+Skills:
+- `Estimate TAM/SAM/SOM for an AI code review tool in the US market`
+- `Create a customer journey map for our e-commerce checkout flow`
+- `Segment these survey respondents by behavior and needs [attach CSV]`
+
+Commands:
+- `/research-users We have interview data from 12 users of our fitness app`
+- `/competitive-analysis Figma competitors in the design tool space`
+- `/analyze-feedback Here's 200 NPS responses from Q4 [attach file]`
+
 ### 5. pm-data-analytics
 
 Data analytics for PMs: SQL query generation, cohort analysis, and A/B test analysis.
@@ -180,6 +246,17 @@ Data analytics for PMs: SQL query generation, cohort analysis, and A/B test anal
 - `/write-query` — Generate SQL queries from natural language
 - `/analyze-cohorts` — Cohort analysis on user engagement data
 - `/analyze-test` — Analyze A/B test results
+
+**Examples:**
+
+Skills:
+- `How large a sample do I need for 95% confidence with a 2% MDE?`
+- `What retention metrics should I track for a subscription app?`
+
+Commands:
+- `/write-query Show me monthly active users by country for Q4 2025 (BigQuery)`
+- `/analyze-test Here are the results from our checkout flow A/B test [attach CSV]`
+- `/analyze-cohorts Weekly retention for users who signed up in January vs February`
 
 ### 6. pm-go-to-market
 
@@ -200,6 +277,18 @@ Go-to-market strategy: beachhead segments, ideal customer profiles, messaging, g
 - `/growth-strategy` — Design growth loops and evaluate GTM motions
 - `/battlecard` — Create a competitive battlecard
 
+**Examples:**
+
+Skills:
+- `What's the best beachhead segment for a developer productivity tool?`
+- `Design a growth loop for a B2B SaaS with a freemium tier`
+- `Define our ICP for an AI-powered HR screening platform`
+
+Commands:
+- `/plan-launch AI code review tool targeting mid-size engineering teams`
+- `/battlecard Our CRM vs Salesforce for the SMB market`
+- `/growth-strategy Two-sided marketplace for connecting freelancers with startups`
+
 ### 7. pm-marketing-growth
 
 Product marketing and growth: marketing ideas, positioning, value proposition statements, product naming, and North Star metrics.
@@ -216,6 +305,17 @@ Product marketing and growth: marketing ideas, positioning, value proposition st
 
 - `/market-product` — Brainstorm marketing ideas, positioning, value props, and product names
 - `/north-star` — Define your North Star Metric and supporting input metrics
+
+**Examples:**
+
+Skills:
+- `Brainstorm 5 positioning angles that differentiate us from Notion`
+- `What's a good North Star Metric for a two-sided marketplace?`
+- `Generate value prop statements for our sales team's pitch deck`
+
+Commands:
+- `/market-product B2B analytics dashboard for e-commerce managers`
+- `/north-star Two-sided marketplace connecting freelancers with clients`
 
 ### 8. pm-toolkit
 
@@ -235,6 +335,17 @@ PM utilities beyond core product work: resume review, legal documents, and proof
 - `/draft-nda` — Draft an NDA
 - `/privacy-policy` — Draft a privacy policy
 - `/proofread` — Check grammar, logic, and flow
+
+**Examples:**
+
+Skills:
+- `Review my PM resume against best practices [attach PDF]`
+- `Check this product announcement for grammar and clarity`
+
+Commands:
+- `/review-resume [attach your PM resume]`
+- `/tailor-resume [attach resume + paste job description]`
+- `/proofread Here's the draft of our Q1 investor update`
 
 ---
 

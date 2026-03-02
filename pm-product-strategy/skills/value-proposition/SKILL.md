@@ -73,6 +73,18 @@ Your task is to develop a comprehensive value proposition that articulates the c
 7. Create a concise value prop statement (1-2 sentences)
 8. Develop a positioning statement for marketing use
 
+### Domain Context
+
+**This template vs Strategyzer's Value Proposition Canvas**: Strategyzer's canvas (by Alexander Osterwalder) is widely used but has structural limitations. This 6-part JTBD template (by Paweł Huryn and Aatir Abdul Rauf) addresses them:
+
+- **Customer first**: This template starts with the customer (Who/Why) and works toward the solution. Strategyzer's canvas places the product on the left, which often leads teams to start with their solution rather than the customer's problem.
+- **One segment at a time**: This template is designed for one segment per pass. Strategyzer's canvas encourages mapping multiple products/services simultaneously, which dilutes focus.
+- **Explicit alternatives**: Section 6 (Alternatives) forces you to name what customers would use without you and articulate why you're better. Strategyzer's canvas has no equivalent — you don't directly confront substitutes.
+- **Simpler structure**: "What before → How → What after" is easier to fill out than separating Customer Jobs, Pains, and Gains on one side and Pain Relievers, Gain Creators, and Products on the other. The separation often creates confusion about where things go.
+- **Actionable output**: The final Value Proposition Statement is ready for marketing, sales, and onboarding. Strategyzer's canvas doesn't produce a reusable statement.
+
+Use Strategyzer's Value Proposition Canvas when you need a detailed pains/gains decomposition for a mature product with complex customer needs. Use this 6-part template for clarity, speed, and actionable output.
+
 ## Notes
 - Jobs to Be Done (JTBD) framework focuses on the progress the customer is trying to make, not demographics
 - Value propositions are segment-specific; you may have different value props for different customer groups

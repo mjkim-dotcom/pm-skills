@@ -2,11 +2,7 @@
 
 Market research skills for PMs: user personas, market segmentation, sentiment analysis, and competitive analysis.
 
-## Overview
-
-This plugin provides 7 skills and 3 commands for product managers.
-
-## Skills
+## Skills (7)
 
 - **competitor-analysis** — Analyze competitors with strengths, weaknesses, and differentiation opportunities.
 - **customer-journey-map** — Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points, and opportunities.
@@ -16,23 +12,11 @@ This plugin provides 7 skills and 3 commands for product managers.
 - **user-personas** — Create refined user personas from research data.
 - **user-segmentation** — Segment users from feedback data based on behavior, JTBD, and needs.
 
-## Commands
+## Commands (3)
 
-- `/pm-market-research:analyze-feedback` — Analyze user feedback at scale — sentiment analysis, theme extraction, and segment-level insights
-- `/pm-market-research:competitive-analysis` — Analyze the competitive landscape — identify competitors, compare strengths and weaknesses, find differentiation opportunities
-- `/pm-market-research:research-users` — Comprehensive user research — build personas, segment users, and map the customer journey from research data
-
-## Installation
-
-```bash
-/install pm-market-research
-```
-
-Or use directly:
-
-```bash
-cc --plugin-dir /path/to/pm-market-research
-```
+- `/pm-market-research:analyze-feedback` — Analyze user feedback at scale — sentiment analysis, theme extraction, and segment-level insights.
+- `/pm-market-research:competitive-analysis` — Analyze the competitive landscape — identify competitors, compare strengths and weaknesses, find differentiation opportunities.
+- `/pm-market-research:research-users` — Comprehensive user research — build personas, segment users, and map the customer journey from research data.
 
 ## Author
 

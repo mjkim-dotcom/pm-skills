@@ -1,19 +1,20 @@
 ---
-description: Explore business models using Lean Canvas, Business Model Canvas, or Value Proposition frameworks
-argument-hint: "[lean|full|value-prop] <product or business>"
+description: Explore business models using Lean Canvas, Business Model Canvas, Startup Canvas, or Value Proposition frameworks
+argument-hint: "[lean|full|startup|value-prop] <product or business>"
 ---
 
 # /business-model -- Business Model Exploration
 
-Build and analyze business models using three complementary frameworks. Choose one or run all three for a complete picture.
+Build and analyze business models using four complementary frameworks. Choose one or run all for a complete picture.
 
 ## Invocation
 
 ```
 /business-model lean Marketplace connecting freelance PMs with startups
 /business-model full Enterprise analytics platform
-/business-model value-prop AI writing tool for non-native English speakers
-/business-model all SaaS onboarding tool        # runs all three
+/business-model startup AI writing tool for non-native English speakers
+/business-model value-prop SaaS onboarding tool
+/business-model all SaaS onboarding tool        # runs all four
 /business-model                                   # asks what you need
 ```
 
@@ -86,6 +87,44 @@ Apply the **business-model** skill to produce all 9 building blocks:
 
 ---
 
+### Startup Canvas Mode
+
+Best for: New products and startups that need both strategy and business model in one artifact. Recommended over Lean Canvas and BMC for new products.
+
+Apply the **startup-canvas** skill to produce a Startup Canvas with 9 strategy sections + business model:
+
+```
+## Startup Canvas: [Product]
+
+### Part 1: Product Strategy
+
+| Vision | Market Segments | Relative Costs |
+|--------|----------------|---------------|
+| [inspiring why] | [JTBD, first segment] | [low cost vs unique value] |
+
+| Value Proposition | Trade-offs | Key Metrics |
+|------------------|-----------|------------|
+| [What before → How → What after → Alternatives] | [what you won't do] | [North Star + OMTM] |
+
+| Growth | Capabilities | Can't/Won't |
+|--------|-------------|------------|
+| [PLG vs Sales-Led, channels] | [build vs partner] | [why competitors can't copy] |
+
+### Part 2: Business Model
+
+| Cost Structure | Revenue Streams |
+|---------------|----------------|
+| [fixed + variable, how they scale] | [pricing model, revenue per channel] |
+
+### Strategy Coherence Check
+[Do all elements reinforce each other?]
+
+### Riskiest Assumptions
+[What must be true — and how to test it]
+```
+
+---
+
 ### Value Proposition Mode
 
 Best for: Refining messaging, understanding user value, product-market fit analysis.
@@ -111,7 +150,7 @@ Apply the **value-proposition** skill to produce a JTBD-framed value proposition
 
 ### All Mode
 
-Runs all three frameworks and adds a synthesis section comparing insights across frameworks.
+Runs all four frameworks and adds a synthesis section comparing insights across frameworks.
 
 ## Workflow (All Modes)
 
@@ -137,7 +176,8 @@ Save as markdown. Offer:
 
 ## Notes
 
-- Lean Canvas is best for speed and hypothesis testing — don't overthink it
-- BMC is better for mature businesses that need to articulate how everything connects
-- Value Proposition is the sharpest tool for product-market fit conversations
+- **Startup Canvas** is the recommended starting point for new products — it separates strategy from business model and covers what BMC and Lean Canvas miss (vision, trade-offs, metrics, Can't/Won't)
+- **Lean Canvas** is best for speed and hypothesis testing — don't overthink it, but be aware it mixes strategy and business model into one artifact
+- **BMC** is better for mature businesses that need to articulate how everything connects, but lacks strategic sections (vision, trade-offs, metrics)
+- **Value Proposition** is the sharpest tool for product-market fit conversations
 - In "all" mode, highlight where frameworks agree (strong signal) and where they diverge (needs investigation)
