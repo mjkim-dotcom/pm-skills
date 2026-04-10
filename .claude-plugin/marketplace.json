@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "pm-skills",
-  "version": "1.0.1",
-  "description": "Structured AI workflows for better product decisions. 65 domain-specific skills and 36 chained workflows across 8 PM plugins — from discovery to strategy, execution, launch, and growth.",
+  "version": "1.1.0",
+  "description": "Structured AI workflows for better product decisions. 65+ domain-specific skills and 36+ chained workflows across 9 PM plugins — from discovery to strategy, execution, launch, and growth.",
   "owner": {
     "name": "Paweł Huryn",
     "email": "pawel@productcompass.pm",
@@ -55,6 +55,12 @@
       "name": "pm-toolkit",
       "description": "PM utility skills: resume review, NDA drafting, privacy policy generation, and grammar/flow checking. Essential tools for product managers beyond core product work.",
       "source": "./pm-toolkit",
+      "category": "product-management"
+    },
+    {
+      "name": "pm-anthropic",
+      "description": "Anthropic PM skills with MCP integrations: brainstorming, competitive briefs, metrics review, roadmap updates, sprint planning, stakeholder updates, research synthesis, and spec writing.",
+      "source": "./pm-anthropic",
       "category": "product-management"
     }
   ]
